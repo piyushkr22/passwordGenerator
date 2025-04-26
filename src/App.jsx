@@ -41,7 +41,7 @@ function App() {
   return (
     <>
       <div className="box">
-        <h1 className="heading">Password Generator</h1>
+        <h1 className="heading">Password Generator :)</h1>
 
         <div className="pass-copy">
           <input
