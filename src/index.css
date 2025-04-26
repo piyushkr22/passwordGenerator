@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: black;
+}
+
+:root {
+  --primary-font-size: 35px;
+  --secondary-font-size: 25px;
+  --input-font-size: 20px;
+  --default-padding: 12px 24px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.box {
+  color: orange;
+  background-color: #282c34;
+  border-radius: 50px;
+  margin: 10%;
+  padding: 20px;
+}
+
+.heading {
+  text-align: center;
+  font-size: var(--primary-font-size);
+}
+
+.pass-copy {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: wrap row;
+  margin: 0 10% 0 10%;
+}
+
+.password-button {
+  flex-basis: 400px;
+  flex-grow: 2;
+  flex-shrink: 3;
+  padding: var(--default-padding);
+  font-size: var(--secondary-font-size);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #3498db;
+  color: #3498db;
+  border-radius: 25px;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+#copyButton {
+  flex-basis: 120px;
+  flex-grow: 1;
+  flex-shrink: 3;
+  padding: var(--default-padding);
+  font-size: var(--secondary-font-size);
+  text-align: center;
+  background-color: blue;
+  color: #fff;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+#copyButton:hover {
+  background-color: lightskyblue;
+  color: black;
+}
+
+.field {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+}
+
+.input-field {
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  gap: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-value {
+  margin: 5px;
+  padding: 5px;
+  font-size: var(--input-font-size);
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --primary-font-size: 20px;
+    --secondary-font-size: 15px;
+    --input-font-size: 12px;
+    --default-padding: 4px 8px;
+  }
+
+  #copyButton {
+    margin: 5% 25% 5% 25%;
+    border-radius: 30px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+  :root {
+    --primary-font-size: 25px;
+    --secondary-font-size: 20px;
+    --input-font-size: 15px;
+    --default-padding: 8px 16px;
+  }
+
+  #copyButton {
+    margin: 5% 25% 5% 25%;
+    border-radius: 30px;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1100px) {
+  :root {
+    --primary-font-size: 30px;
+    --secondary-font-size: 23px;
+    --input-font-size: 17px;
+    --default-padding: 10px 20px;
+  }
+
+  #copyButton {
+    margin: 5% 25% 5% 25%;
+    border-radius: 30px;
+  }
+}
